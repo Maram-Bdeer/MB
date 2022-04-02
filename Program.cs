@@ -1,5 +1,22 @@
 ﻿// See https://aka.ms/new-console-template for more information
- Console.WriteLine("Choose an option:");
+
+using System;
+ 
+namespace Ass3
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            bool showMenu = true;
+            while (showMenu)
+            {
+                showMenu = MainMenu();
+            }
+        }
+        private static bool MainMenu()
+        {
+            Console.WriteLine("Choose an option:");
     Console.WriteLine("1) add user");
     Console.WriteLine("2) Remove user");
     Console.WriteLine("3) Edit user");
@@ -25,4 +42,7 @@ User u;
         default:
             return true;
     }
-}
+
+            }
+        }
+ 
